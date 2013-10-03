@@ -9,59 +9,76 @@ Example of usage
 ================
 
 Having code:
+```
     bar() {
       foo(param1, param2, param3<cursor here>)
     }
+```
 
 note, that ")" bracket is added by sublime once you wrote "foo("
+
 press ctrl-enter and get to:
+```
     bar() {
       foo(param1, param2, param3);
-      <cursor>
+      <cursor here>
     }
+```
 
 press ctrl-enter once more and get to:
+```
     bar() {
       foo(param1, param2, param3);
     }
     <cursor>
+```
 
-
-Out of block:
+Out of block
+------------
+```
     if (a > b) {
-    	do1();
-	    do2();
-	    <cursor here>
-	    do3();
+      do1();
+      do2();
+      <cursor here>
+      do3();
     }
+```
 
 (yes, ive just used ctrl-enters to complement do1, do2, do3 calls with semicolon)
+
 ctrl-enter and get to:
+```
     if (a > b) {
-	    do1();
-	    do2();
-	    do3();
+      do1();
+      do2();
+      do3();
     }
     <cursor here>
+```
 
-
-Out of functor:
+Out of functor
+--------------
+```
     event.on('error', function(message) {
-	    show(message<cursor>)
+      show(message<cursor>)
     })
-
-note that ")" after cursor and ""})"" below are written by sublime
-ctrl-enter and get:
-    event.on('error', function() {
-	    show(message);
-	    <cursor>
-    })
+```
+")" after cursor and ""})"" below are written by sublime itself
 
 ctrl-enter and get:
+```
     event.on('error', function() {
-	    show(message);
+      show(message);
+      <cursor>
+    })
+```
+ctrl-enter and get:
+```
+    event.on('error', function() {
+      show(message);
     });
     <cursor>
+```
 
 Installation
 ============
@@ -70,6 +87,8 @@ Installation
 and copy-paste content of .py file there.
 
 2. Map hot-key to the command. Menu Preferences -> Key binding - User and add e.g. hotkey for CTRL-Enter:
+```
     [
 	      {"keys": ["ctrl+enter"], "command": "out_of_brackets", "args": {}}
     ]
+```
