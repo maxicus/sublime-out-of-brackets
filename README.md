@@ -1,7 +1,7 @@
 I use that simple plugin on each line of my code written in Sublime Text.
 
 That plugin finishes regular line/block endings and moves cursor out of it. 
-Can be used for C-style language syntaxes: C, C++, Java, Javascript.
+Can be used for C-style language syntaxes: C, C++, Java, Javascript, PHP.
 
 It jumps out of () or {} brackets and adds semicolon if required.
 
@@ -15,7 +15,7 @@ Having code:
     }
 ```
 
-note, that ")" bracket is added by sublime once you wrote "foo("
+note, that ")" bracket has been added by sublime once you wrote "foo("
 
 press ctrl-enter and get to:
 ```
@@ -44,7 +44,7 @@ Out of block
     }
 ```
 
-(yes, ive just used ctrl-enters to complement do1, do2, do3 calls with semicolon)
+(yes, i've just used ctrl-enters to complement do1, do2, do3 calls with semicolon)
 
 ctrl-enter and get to:
 ```
